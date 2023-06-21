@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Music</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/Poster.css"  media="screen,projection"/>
+</head>
+
+<body>
+<nav>
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="col s12">
+                <a href="index.html" class="breadcrumb">Home</a>
+                <a href="RecommendationsEdited.html" class="breadcrumb">Recommended</a>
+                <a href="#!" class="breadcrumb">Games</a>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+<header>
+    <div class="container">
+        <h1>Find new music to listen to</h1>
+        <hr/>
+    </div>
+</header>
+
+<main style="height: 100%; padding-bottom: 200px">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="input-field">
+                    <select id="genres">
+                        <option value="drumandbass">Drum and Bass</option>
+                        <option value="rock">Rock</option>
+                        <option value="deephouse">Deep House</option>
+                        <option value="indie">Indie</option>
+                        <option value="metal">Metal</option>
+                    </select>
+                    <label>Choose a Genre</label>
+                </div>
+                <a class="waves-effect red darken-1 waves-light btn col s12" id="generate">Get a recommendation</a>
+            </div>
+            <div class="col s12 m8">
+                <div class="card-panel gray lighten-5 z-depth-1">
+                    <div class="row">
+                        <div class="col s12 m12 l12 xl7">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="responsive-img activator center-align" id="img" src="images/placeholder.jpeg" alt="A simple gray blank image to be used as a placeholder">
+                                </div>
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Description<i class="material-icons right">close</i></span>
+                                    <p id="descr">This is where you would see the description of your recommended title</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col s12 m12 l12 xl5">
+                            <div style="padding-left: 2rem;">
+                                <h3 class="row" id="figcaption">One click away from an unforgettable experience</h3>
+                                <h5 class="row" id="author">by your website team</h5>
+                                <h5 class="row" id="isbn"> </h5>
+                                <a class="waves-effect red darken-1 waves-light btn row disabled" id="storefront" target="_blank" href=" "><span class="valign-wrapper"><i class="material-icons" style="margin-right: 0.22rem">headphones</i>Listen here</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="page-footer" style="position: fixed; bottom: 0; width: 100%; z-index: 9999; padding-top: 0.5rem">
+    <div class="container">
+        <ul class="collapsible" style="margin: 0 0 0.55rem 0; border: 0!important;">
+            <li>
+                <div class="collapsible-body"  style="padding-top: 1px; border: 0!important;">
+                    <div style="min-height: 80px">
+                        <div class="row" style="min-height: 80px; margin-bottom: 0;">
+                            <div class="col l2 m6 s12" style="max-height: 71px">
+                                <div>
+                                    <a class="card-panel red darken-1 center-align valign-wrapper" style="justify-content: center; min-width: 100px; height: 50px" href="contact.html">
+                                        <span class="white-text text-lighten-4 valign-wrapper"><i class="material-icons" style="margin-right: 0.22rem">question_answer</i>Contact</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l2 m6 s12" style="max-height: 71px">
+                                <div>
+                                    <a class="card-panel red darken-1 center-align valign-wrapper" style="justify-content: center; min-width: 100px; height: 50px" href="support.html">
+                                        <span class="white-text text-lighten-4 valign-wrapper"><i class="material-icons" style="margin-right: 0.22rem">contact_support</i>Support</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l6 m12 s0" style="height: auto">
+                                <div>
+                                    <p class="left-align valign-wrapper" style="padding: 0 15px 0 15px; margin: 7px 0 14px 0; height: auto">
+                                        For any questions or suggestions, feel free to contact us. If you need help with anything, click the support button to the left.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col l2 m12 s12" style="max-height: 71px">
+                                <div>
+                                    <a class="card-panel red darken-1 center-align valign-wrapper" style="justify-content: center; min-width: 100px; height: 50px" href="about.html">
+                                        <span class="white-text text-lighten-4 valign-wrapper"><i class="material-icons" style="margin-right: 0.22rem">groups</i>About</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapsible-header red lighten-1" style="max-height: 50px; padding: 0.5rem 0.5rem 0.5rem 2rem; border: 0!important;">
+                    <span class="white-text text-lighten-4 valign-wrapper flow-text"><i class="material-icons">ads_click</i>For more options click here.</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            &copy; 2023 Website Team
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="js/materialize.js"></script>
+<script> document.addEventListener('DOMContentLoaded', function() {
+    var selectElements = document.querySelectorAll('select');
+    M.FormSelect.init(selectElements);
+});
+</script>
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        let elems = document.querySelectorAll('.collapsible');
+        let instance = M.Collapsible.init(elems, null);
+        M.AutoInit(instance);
+    });
+
+</script>
+<script src="js/func_get_ran_obj.js"></script>
+<script src="js/music_script.js"></script>
+</body>
+</html>

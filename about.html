@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/Poster.css"  media="screen,projection"/>
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="col s12">
+                <a href="index.html" class="breadcrumb">Home</a>
+                <a href="!#" class="breadcrumb">About Us</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<header>
+    <div class="container">
+        <h1>About Us</h1>
+        <hr/>
+    </div>
+</header>
+<main>
+    <div class="container" style="margin-bottom: 100px">
+        <div>
+            <div class="flow-text">
+                <p>Welcome to our website! We are a team of three computer science students who created this platform with the aim of providing a source of inspiration for those who find themselves tired of their usual music, books, movies, and games. We understand the desire for something new and exciting, and that's why we developed this website to help you discover fresh content in these categories.</p>
+                <br>
+                <ul>
+                    <li><h4>Our Story:</h4></li>
+                    <li>As avid enthusiasts of various forms of media, we often found ourselves craving a change from our typical preferences. We realized that many others might be facing the same dilemma. So, we decided to combine our passion for computer science with our love for music, books, movies, and games to create a solution. With our own personal recommendations at the forefront, we built a platform that generates random objects in these categories, allowing you to explore and broaden your horizons.</li>
+                    <br>
+                    <li><h4>Our Mission:</h4></li>
+                    <li>Our mission is simple: to inspire and guide you towards new and exciting experiences. We believe that the world of music, literature, film, and gaming is vast and filled with hidden gems waiting to be discovered. Our platform aims to facilitate this journey by presenting you with random recommendations from various genres. We want to encourage you to step outside your comfort zone, try something different, and find joy in exploring new forms of entertainment.</li>
+                    <br>
+                    <li><h4>Why Choose us: </h4></li>
+                    <ol>
+                        <li>Handpicked Recommendations: We have curated our own collection of music, books, movies, and games that have captivated our hearts and minds. Each recommendation you find on our platform is carefully selected to provide you with a unique and enjoyable experience.</li>
+                        <li>Diverse Genres: We offer a wide range of genres in each category, ensuring that there's something for everyone. Whether you're into alternative music, thriller novels, romantic comedies, or action-packed games, we've got you covered.</li>
+                        <li>Randomized Discovery: Our random object generator adds an element of surprise to your exploration. It presents you with recommendations you might not have come across otherwise, helping you break free from your usual routine and discover hidden treasures.</li>
+                    </ol>
+                </ul>
+                <br>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<footer class="page-footer" style="position: fixed; bottom: 0; width: 100%; z-index: 9999; padding-top: 0.5rem">
+    <div class="container">
+        <ul class="collapsible" id="coll" style="margin: 0 0 0.55rem 0; border: 0!important;">
+            <li>
+                <div class="collapsible-body"  style="padding-top: 1px; border: 0!important;">
+                    <div style="min-height: 80px">
+                        <div class="row" style="min-height: 80px; margin-bottom: 0;">
+                            <div class="col l2 m6 s12" style="max-height: 71px">
+                                <div>
+                                    <a class="card-panel red darken-1 center-align valign-wrapper" style="justify-content: center; min-width: 100px; height: 50px" href="contact.html">
+                                        <span class="white-text text-lighten-4 valign-wrapper"><i class="material-icons" style="margin-right: 0.22rem">question_answer</i>Contact</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l2 m6 s12" style="max-height: 71px">
+                                <div>
+                                    <a class="card-panel red darken-1 center-align valign-wrapper" style="justify-content: center; min-width: 100px; height: 50px" href="support.html">
+                                        <span class="white-text text-lighten-4 valign-wrapper"><i class="material-icons" style="margin-right: 0.22rem">contact_support</i>Support</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col l6 m12 s0" style="height: auto">
+                                <div>
+                                    <p class="left-align valign-wrapper" style="padding: 0 15px 0 15px; margin: 7px 0 14px 0; height: auto">
+                                        For any questions or suggestions, feel free to contact us. If you need help with anything, click the support button to the left.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col l2 m12 s12" style="max-height: 71px">
+                                <div>
+                                    <a class="card-panel red darken-1 center-align valign-wrapper" style="justify-content: center; min-width: 100px; height: 50px" href="">
+                                        <span class="white-text text-lighten-4 valign-wrapper"><i class="material-icons" style="margin-right: 0.22rem">groups</i>About</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapsible-header red lighten-1" style="max-height: 50px; padding: 0.5rem 0.5rem 0.5rem 2rem; border: 0!important;">
+                    <span class="white-text text-lighten-4 valign-wrapper flow-text"><i class="material-icons">ads_click</i>For more options click here.</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            &copy; 2023 Website Team
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const elems = document.querySelectorAll('#coll');
+        const instance = M.Collapsible.init(elems, null);
+        M.AutoInit(instance);
+    });
+</script>
+</body>
+</html>
